@@ -1,0 +1,135 @@
+@import 'vars';
+@import 'global';
+
+.header{
+  background-color: rgb(0, 2, 8);
+  padding: 15px 0;
+}
+.header__menu{
+  margin-bottom: 15px;
+}
+.header__menu-list{
+  a{
+    color: #fff;
+    text-decoration: none;
+    color: rgba(255,255,255,.6);
+    font-size: 14px;
+  }
+  li{
+    display: inline-block;
+  }
+  li + li{
+    margin-left: 40px;
+  }
+}
+.btn-burger{
+  margin-right: 20px;
+  width: 48px;
+  height: 47px;
+  background: 0 0;
+  border: 1px solid rgba(255,255,255,.4);
+  padding: 10px 9px;
+  border-radius: 8px;
+  div{
+    display: block;
+    width: 28px;
+    height: 4px;
+    background: #fff;
+    border-radius: 8px;
+  }
+  div + div{
+    margin-top: 6px;
+  }
+}
+.header__inner{
+  display: flex;
+  justify-content: space-between;
+}
+.header__wrapper{
+  display: flex;
+}
+.header__logo{
+  font-size: 24px;
+  font-weight: 700;
+  span{
+    display: block;
+    font-size: 14px;
+    text-align: center;
+    background-color: rgb(13, 185, 162);
+  }
+}
+.header__search{
+  max-width: 610px;
+  width: 100%;
+  margin-left: 30px;
+  border-radius: 26px;
+  min-height: 24px;
+  padding: 16px 100px 16px 20px;
+  background-color: rgba(255,255,255,.2);
+  position: relative;
+  input{
+    position: absolute;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: rgba(255,255,255,.5);
+    &::placeholder{
+      color: rgba(255,255,255,.5);
+    }
+  }
+}
+.header__backet{
+  display: flex;
+  justify-content: space-around;
+  width: 300px;
+  padding-top: 30px;
+  margin-left: 15px;
+  .header__basket-item + .header__basket-item{
+    margin-left: 15px;
+  }
+}
+.options{
+  color: #fff;
+  padding: 5px;
+  border-radius: 15px;
+  background-color: #524a4a;
+  max-width: 95px;
+  color: #bdbdbd;
+  font-size: 15px;
+  font-weight: 700;
+  display: none;
+}
+.header-dropdown{
+  position: absolute;
+  top: 56px;
+  padding: 10px;
+  color: #fff;
+  z-index: 2;
+  border: 1px solid #000;
+  display: none;
+  background-color: #040B04;
+  border-radius: 10px;
+  .header-dropdown__item{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fff;
+  }
+  .header-dropdown__item:last-child{
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+  .header-dropdown__item + .header-dropdown__item{
+    padding-top: 10px;
+  }
+}
+.header__logo {
+  a{
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  span{
+    font-size: 10px;
+  }
+}
+
+@import 'media';
